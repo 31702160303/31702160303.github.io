@@ -50,7 +50,7 @@
                     time: 0 //不自动关闭
                     ,btn: ['我确定  ', '再看看']
                     ,yes: function(index){
-                        $.post('/api/index/add/',data.field,function(data){
+                        $.post(url+'/api/index/add/',data.field,function(data){
                             if(data.status){
                                 layer.msg(data.data, {icon:1,time:2000}, function(){
                                     var index = parent.layer.getFrameIndex(window.name);

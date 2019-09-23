@@ -13,7 +13,7 @@
             ,done: function(page, next){ 
                 var lis = [];
                
-                $.get('/api/index/details?note='+id, function(res){
+                $.get(url+'/api/index/details?note='+id, function(res){
                   
                     layui.each(res.data, function(index, item){
                     
