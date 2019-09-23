@@ -14,7 +14,7 @@
             ,done: function(page, next){
                 var lis = [];
              
-                    $.get('/api/?page='+page+'&type='+type, function(res){
+                    $.get('https://jsj.free.cngrok.com/api/?page='+page+'&type='+type, function(res){
                   
                     layui.each(res.data, function(index, item){
                   
